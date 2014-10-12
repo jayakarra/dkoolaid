@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Accordion - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <link rel="Stylesheet" type="text/css" href="./style/jHtmlArea.css" />
+    <style>
+    textarea
+    {
+    width:100%;
+    height: 100%;
+    }
+    .header{
+        width:20%;
+        font-size: 45px;
+
+    }
+
+    .ui-state-default{
+     background:#80A4E5 ;
+
+    }
+        .ui-state-active{
+           background: #2F3476;
+            color: #ffffff;
+        }
+    </style>
+
+    <script type="text/javascript" src="./scripts/jHtmlArea-0.8.js"></script>
+
+    <script>
+        $(function() {
+            $( "#accordion" ).accordion();
+            $('textarea').htmlarea();
+
+        });
+    </script>
+</head>
+<body>
+<div style="height:100%;background-color:#060B4D;color: #ffffff">
+    <div class="header">dKoolAid</div>
+
+<div id="accordion">
+    <h3>Notes</h3>
+    <div >
+        <textarea rows="15"></textarea>
+
+    </div>
+    <h3>Pre-Check list</h3>
+    <div >
+        <table>
+            <tr>
+
+                <td><input type="checkbox"> Done with point 1</input> </td>
+
+            </tr>
+            <tr>
+
+                    <td><input type="checkbox"> Done with point 1</input> </td>
+
+                </tr>
+            <tr>
+
+                    <td><input type="checkbox"> Done with point 1</input> </td>
+
+                </tr>
+            <tr>
+
+                    <td><input type="checkbox"> Done with point 1</input> </td>
+
+                </tr>
+        </table>
+    </div>
+    <h3>Feedback</h3>
+    <div>
+        <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+        </ul>
+    </div>
+
+</div>
+
+ <div>
+</body>
+</html>
